@@ -1,0 +1,21 @@
+name: SeasonPlugin
+version: '${project.version}'
+main: com.irxfatal.seasonplugin.SeasonPlugin
+api-version: '1.16'
+prefix: SP
+authors: [IrxFatal]
+description: Simple season plugin to add something new to your server
+
+commands:
+  setseason:
+    description: Устанавливает сезон.
+    usage: /setseason <SPRING|SUMMER|AUTUMN|WINTER>
+    permission: seasons.setseason
+  season:
+    description: Показывает текущий сезон.
+    usage: /season
+
+permissions:
+  seasons.setseason:
+    description: Позволяет устанавливать сезон.
+    default: op
